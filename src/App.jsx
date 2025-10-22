@@ -1,12 +1,6 @@
-import Card from "./components/Card";
-import Header from "./components/Header";
-
+import ContentPage from "./Pages/ContentPage.jsx";
 export default function App() {
   return (
-    <div>
-      <Header />
-      <hr />
-      <Card />
-    </div>
+    <ContentPage />
   );
 }
