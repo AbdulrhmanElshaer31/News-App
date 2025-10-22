@@ -1,8 +1,8 @@
 export default function Buttons({name,icon}) {
     return(
         <button className="relative group
-              text-white bg-gray-300
-              p-4 rounded-4xl
+              text-white 
+              p-2 rounded-4xl
               hover:bg-gray-400
               transition duration-300
               flex items-center justify-center">

@@ -12,7 +12,7 @@ export default function Sidebar() {
     { name: "Economy", icon: TrendingUp },
   ];
   return (
-    <div className="flex flex-col gap-4 bg-gray-500 p-3 w-fit rounded-[35px] absolute top-1/2 left-5 -translate-y-1/2">
+    <div className="flex flex-col gap-4 bg-gray-500 p-2 w-fit rounded-full absolute top-1/2 left-5 -translate-y-1/2">
       {SidebarItems.map((item, index) => (
         <Buttons key={index} icon={<item.icon />} name={item.name} />
       ))}

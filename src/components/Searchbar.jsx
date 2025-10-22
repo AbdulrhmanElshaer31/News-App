@@ -24,7 +24,7 @@ const Searchbar = () => {
             value={query}
             onChange={handleChange}
             className='px-8 py-2 rounded-full 
-                    bg-white border border-[#edeff4] text-[#2E3440]'
+                    bg-white border border-[#edeff4] text-[#2E3440] focus:outline-none focus:border-[#c7cad0]'
          />
         </div>
     </>
