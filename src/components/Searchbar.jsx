@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const Searchbar = () => {
     const [query, setQuery] = useState("");
+    const [results, setResults] = useState([]);
 
     // Handle Input Value
     const handleChange = (e) => {
