@@ -1,7 +1,12 @@
+import Card from "./components/Card";
+import Header from "./components/Header";
+
 export default function App() {
   return (
     <div>
-      <h1>Welcome to the News App</h1>
+      <Header />
+      <hr />
+      <Card />
     </div>
   );
 }
