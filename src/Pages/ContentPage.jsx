@@ -6,11 +6,11 @@ export default function ContentPage() {
   return (
     <>
       {/* Parent (Body) */}
-      <div className="w-full h-screen  items-center justify-center p-4 flex  bg-gray-200">
+      <div className="w-full h-screen md:w-full sm:w-full md:h-screen sm:h-screen items-center justify-center p-4 flex  bg-gray-200">
         {/* Container */}
         <div className="relative w-full max-w-7xl h-full  flex gap-8">
           {/* SideBar Section */}
-          <div className=" flex items-center justify-center">
+          <div className=" hidden items-center justify-center md:flex ">
             <Sidebar />
           </div>
           {/* Header & Cards In The Same Section */}
@@ -18,6 +18,9 @@ export default function ContentPage() {
           <div className="flex-1 flex flex-col gap-4">
             <div>
               <Header />
+            </div>
+            <div className="md:hidden flex justify-center items-center">
+              <Sidebar />
             </div>
             {/* Cards Section */}
             <div className="overflow-auto">
