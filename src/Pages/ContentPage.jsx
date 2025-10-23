@@ -1,34 +1,28 @@
 import Header from "../components/Header.jsx";
 import Cards from "../components/Cards.jsx";
 import Sidebar from "../components/Sidebar.jsx";
+import "../App.css";
 
 export default function ContentPage() {
   return (
-    <>
-      {/* Parent (Body) */}
-      <div className="w-full h-screen md:w-full sm:w-full md:h-screen sm:h-screen items-center justify-center p-4 flex  bg-gray-200">
-        {/* Container */}
-        <div className="relative w-full max-w-7xl h-full  flex gap-8">
-          {/* SideBar Section */}
-          <div className=" hidden items-center justify-center md:flex ">
-            <Sidebar />
+      <div className="p-5 flex gap-4 h-4/5 justify-center">
+        <div className="p-2 hidden justify-center items-center  sm:flex">
+          {/* SideBar */}
+          <Sidebar></Sidebar>
+        </div>
+        <div className="p-2 flex flex-col gap-2">
+          {/* Header - Sidebar(Mobile Vision) -  Cards */}
+          <div>
+              {/* Header */}
+              <Header></Header>
           </div>
-          {/* Header & Cards In The Same Section */}
-          {/* Header Section */}
-          <div className="flex-1 flex flex-col gap-4">
-            <div>
-              <Header />
-            </div>
-            <div className="md:hidden flex justify-center items-center">
-              <Sidebar />
-            </div>
-            {/* Cards Section */}
-            <div className="overflow-auto">
-              <Cards />
-            </div>
+          <div className="p-2 flex justify-center items-center  sm:hidden">
+            <Sidebar></Sidebar>
+          </div>
+          <div className="overflow-auto custom-sidebar">
+            <Cards></Cards>
           </div>
         </div>
       </div>
-    </>
   );
 }

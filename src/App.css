@@ -1,1 +1,20 @@
 @import "tailwindcss";
+/* Scrollbar custom styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* عرض صغير جدًا */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* الخلفية خفية */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(2, 2, 2, 0.582); /* لون فاتح شبه شفاف */
+  border-radius: 9999px; /* شكل دائري ناعم */
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(2, 2, 2); /* لون فاتح شبه شفاف */
+  /* يظهر أكتر لما تعدي عليه */
+}
