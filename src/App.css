@@ -1,20 +1,28 @@
 @import "tailwindcss";
-/* Scrollbar custom styling */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px; /* عرض صغير جدًا */
+
+.bg-site {
+  background-image: url(/src//components/background.png);
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* الخلفية خفية */
+.bg-cover {
+  background-size: cover;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(2, 2, 2, 0.582); /* لون فاتح شبه شفاف */
-  border-radius: 9999px; /* شكل دائري ناعم */
-  transition: background 0.3s ease;
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgb(2, 2, 2); /* لون فاتح شبه شفاف */
-  /* يظهر أكتر لما تعدي عليه */
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
 }
