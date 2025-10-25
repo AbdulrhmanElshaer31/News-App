@@ -6,7 +6,7 @@ export default function Buttons({ name, icon }) {
         p-2 rounded-4xl
         hover:bg-gray-400
         transition duration-300
-        flex items-center justify-center"
+        flex items-center justify-center cursor-pointer"
     >
       {icon}
       <span
