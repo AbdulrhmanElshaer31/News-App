@@ -5,7 +5,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="my-5">
         {/* container with fixed height and scroll */}
         <div className="px-4">
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">

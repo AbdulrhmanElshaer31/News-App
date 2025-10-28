@@ -1,12 +1,18 @@
-export default function Buttons({ name, icon }) {
+export default function Buttons({ name, icon, isActive, onClick }) {
   return (
     <button
-      className="relative group
-        text-white 
+      className={`relative group
         p-2 rounded-4xl
-        hover:bg-gray-400
         transition duration-300
-        flex items-center justify-center cursor-pointer"
+        flex items-center justify-center cursor-pointer
+        ${
+          isActive
+            ? "text-gray-400 hover:text-white"
+            : "text-white hover:text-gray-400"
+        }`}
+      onClick={() => {
+        onClick(name);
+      }}
     >
       {icon}
       <span

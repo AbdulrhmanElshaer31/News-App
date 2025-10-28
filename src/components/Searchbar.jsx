@@ -21,11 +21,11 @@ const Searchbar = () => {
             {/* search input */}
             <input
             type='text'
-            placeholder='🔍 Search'
+            placeholder='Search ...'
             value={query}
             onChange={handleChange}
-            className='px-8 py-2 rounded-full 
-                    bg-white border border-[#edeff4] text-[#2E3440] focus:outline-none focus:border-[#c7cad0]'
+            className='px-8 py-2 rounded-md 
+                    bg-[#19485f]/10 backdrop-blur-xl border text-white border-white text-[#2E3440] focus:outline-none focus:border-[#c7cad0]'
          />
         </div>
     </>
