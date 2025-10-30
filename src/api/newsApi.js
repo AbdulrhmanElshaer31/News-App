@@ -1,16 +1,15 @@
 import axios from "axios";
 
-const apikey = import.meta.env.API_KEY;
+const getBreakingNews = async (query) => {
+  try {
+    const res = await axios.get(
+      `https://newsapi.org/v2/everything?q=${query.toLowerCase()}&apiKey=0370bfd5e5b4406c917242d5f09cb200`
+    );
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching news:", error);
+    return null;
+  }
+};
 
-const url = 'https://newsapi.org/v2/everything?' +
-          'q=Apple&' +
-          'from=2025-10-26&' +
-          'sortBy=popularity&' +
-          `apiKey=${apikey}`;
-
-const req = new Request(url);
-
-fetch(req)
-    .then(function(response) {
-        console.log(response.json());
-    })
+export default getBreakingNews;
