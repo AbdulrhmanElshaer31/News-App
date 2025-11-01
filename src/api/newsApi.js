@@ -54,7 +54,9 @@ class NewsApi {
   }
 }
 
-const news = new NewsApi("https://newsapi.org/v2", "944cbb0de3bd43a289e583e42cfeeb34");
+const news = new NewsApi("https://newsapi.org/v2", "0370bfd5e5b4406c917242d5f09cb200");
+
+export default news;
 
 /*
 everything object & top headliens (same structure my friend 3abido) structure: ATTENTION (انا عايز جاتووووووه)
